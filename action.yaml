@@ -23,7 +23,8 @@ runs:
       env:
         GITHUB_ACTION_PATH: ${{ github.action_path }}
 
-    - run: ls -l "$GITHUB_ACTION_PATH"
+    - name: List Action Directory
+      run: ls -l "$GITHUB_ACTION_PATH"
       shell: bash
 
     - name: Run plan
